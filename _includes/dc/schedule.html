@@ -34,123 +34,27 @@ The schedule for the different curricula are listed here:
   </div>
 </div>
 
-{% elsif site.curriculum == "dc-ecology" %}
-<div class="row">
-  <div class="col-md-6">
-    <h3>Day 1</h3>
-    <table class="table table-striped">
-      <tr>
-	<td>Before starting</td>
-	<td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank">Pre-workshop survey</a></td>
-      </tr>
-      <tr><td>Morning</td> <td> <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/">Data Organization in Spreadsheets</a></td></tr>
-      <tr><td> </td><td><a href="https://datacarpentry.org/OpenRefine-ecology-lesson/">OpenRefine for Data Cleaning</a></td></tr>
-      <tr>
-        <td>Afternoon</td>
-        <td>
-          {% if site.flavor == "r" %}
-          <a href="https://datacarpentry.org/R-ecology-lesson/">Introduction to R</a>
-          {% elsif site.flavor == "python" %}
-          <a href="https://datacarpentry.org/python-ecology-lesson/">Introduction to Python</a>
-          {% else %}
-          {% include warning-flavor.html %}
-          {% endif %}
-      </td></tr>
-      <tr> <td>Evening</td> <td>END</td> </tr>
-    </table>
-  </div>
-  <div class="col-md-6">
-    <h3>Day 2</h3>
-    <table class="table table-striped">
-      <tr> <td>Morning</td>
-        <td>
-          {% if site.flavor == "r" %}
-          <a href="https://datacarpentry.org/R-ecology-lesson/">Continuation of R: Data analysis and Visualization</a>
-          {% elsif site.flavor == "python" %}
-          <a href="https://datacarpentry.org/python-ecology-lesson/">Continuation of Python: Data analysis and Visualization</a>
-          {% else %}
-          {% include warning-flavor.html %}
-          {% endif %}
-        </td>
-      </tr>
-      <tr> <td>Afternoon</td><td><a href="https://datacarpentry.org/sql-ecology-lesson/">Data Management with SQL</a></td></tr>
-      <tr>
-	<td>Evening</td>
-	<td><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank">Post-workshop survey</a></td>
-      </tr>
-      <tr>
-	<td> </td>
-	<td> END </td>
-      </tr>
-    </table>
-  </div>
-</div>
 
-{% elsif site.curriculum == "dc-genomics" %}
-
-<div class="row">
-  <div class="col-md-6">
-    <h3>Day 1</h3>
-    <table class="table table-striped">
-      <tr>
-	<td>Before starting</td>
-	<td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank">Pre-workshop survey</a></td>
-      </tr>
-      <tr><td>Morning</td> <td> <a href="https://datacarpentry.org/organization-genomics/">Project Organization and Management</a></td></tr>
-      <tr><td> </td><td><a href="https://datacarpentry.org/shell-genomics/">Introduction to the Command Line</a></td></tr>
-      <tr><td>Afternoon</td><td><a href="https://datacarpentry.org/wrangling-genomics/">Data Wrangling and Processing</a></td></tr>
-			<tr> <td>Evening</td> <td>END</td> </tr>
-    </table>
-  </div>
-  <div class="col-md-6">
-    <h3>Day 2</h3>
-    <table class="table table-striped">
-			<tr><td>Morning</td><td><a href="https://datacarpentry.org/wrangling-genomics/">Continuation: Data Wrangling and Processing</a></td></tr>
-			<tr><td>Afternoon</td><td><a href="https://datacarpentry.org/cloud-genomics/">Introduction to Cloud Computing for Genomics</a></td></tr>
-      <tr>
-	<td>Evening</td>
-	<td><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank">Post-workshop survey</a></td>
-      </tr>
-      <tr>
-	<td> </td>
-	<td> END </td>
-      </tr>
-    </table>
-  </div>
-</div>
 
 {% elsif site.curriculum == "dc-socsci" %}
 
 <div class="row">
   <div class="col-md-6">
-    <h3>Day 1</h3>
+    <h3>Weekly from 12 - 14 on Tuesdays and 10 - 13:00/13 - 16:00 on Fridays, Copenhagen time</h3>
     <table class="table table-striped">
-      <tr>
-	<td>Before starting</td>
-	<td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank">Pre-workshop survey</a></td>
+        <tr><td>Before starting</td><td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank">Pre-workshop survey</a></td></tr>
+        <tr><td>Tue 02 Nov</td> <td> <a href="https://librarycarpentry.org/lc-data-intro/">Introduction to Regular Expressions</a> </td></tr>
+	<tr><td>Thu 09 Nov</td><td><a href="https://datacarpentry.org/spreadsheets-socialsci/">Data Organization in Spreadsheets</a> </td></tr>
+        <tr><td>Thu 16 Nov</td><td><a href="https://datacarpentry.org/openrefine-socialsci/">OpenRefine for Data Cleaning</a></td></tr>
+	<tr><td>Thu 23 Nov</td><td><a href="https://datacarpentry.org/r-socialsci/">Introduction to R</a></td></tr>
+	<tr><td>Thu 30 Dec</td><td><a href="https://datacarpentry.org/r-socialsci/">Crunching and Visualising Data in R</a></td></tr>
+	<tr><td>Thu 07 Dec</td><td><a href="www.github.com/adivea/Leaflet">Texmining and Interactive Maps in R</a></td></tr>
+	<tr><td>END</td><td><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank">Post-workshop survey</a></td>
+	<tr><td>Evening</td><td><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank">Post-workshop survey</a></td>
       </tr>
-      <tr><td>Morning</td> <td> <a href="https://datacarpentry.org/spreadsheets-socialsci/">Data Organization in Spreadsheets</a></td></tr>
-      <tr><td> </td><td><a href="https://datacarpentry.org/openrefine-socialsci/">OpenRefine for Data Cleaning</a></td></tr>
-      <tr><td>Afternoon</td><td><a href="https://datacarpentry.org/r-socialsci/">Introduction to R</a></td></tr>
-      <tr> <td>Evening</td> <td>END</td> </tr>
-    </table>
+     </table>
   </div>
-  <div class="col-md-6">
-    <h3>Day 2</h3>
-    <table class="table table-striped">
-      <tr> <td>Morning</td> <td><a href="https://datacarpentry.org/r-socialsci/">Continuation of R: Data Analysis & Visualization</a></td></tr>
-      <tr> <td>Afternoon</td><td><a href="https://datacarpentry.org/sql-socialsci/">Data Management with SQL</a></td></tr>
-      <tr>
-	<td>Evening</td>
-	<td><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank">Post-workshop survey</a></td>
-      </tr>
-      <tr>
-	<td> </td>
-	<td> END </td>
-      </tr>
-    </table>
-  </div>
-</div>
+ </div>
 
 
 {% elsif site.curriculum == "dc-geospatial" %}
